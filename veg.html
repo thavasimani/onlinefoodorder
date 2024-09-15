@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="veg.css">
+</head>
+<body>
+    <header class="main-header">
+        <label  id="dark-change"></label>
+        <img src="images-1/logo1.png" class="logo">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">aboutus</a></li>
+            <li><a href="menu.html">explorefoods</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="signup.html">signup</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><span class="cart-count" id="count"></span>
+                </li>
+        </ul>
+    </header>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+    </script>
+    <div class="base"></div>
+    <div class="block">
+      <div class="block1">
+          <a href="veg.html"><img src="images-1/menu1.jpg" alt=""><h1>veg</h1></a>    
+      </div>
+      <div class="block1">
+        <a href="nonveg.html"><img src="images-1/menu2.jpg" alt=""><h1>non veg</h1></a>   
+      </div> 
+      <div class="block1">
+        <a href="fastfood.html"><img src="images/burger.jpg" alt=""><h1>fast food</h1></a>     
+      </div> 
+      <div class="block1">
+        <a href="parotta.html"><img src="images-1/parotta.jpg" alt=""><h1>parotta</h1></a>     
+      </div> 
+      <div class="block1">
+        <a href="sweets.html"><img src="images-1/menu5.jpg" alt=""><h1>sweets</h1></a>     
+      </div> 
+      <div class="block1">
+        <a href="desserts.html"><img src="images-1/menu6.jpg" alt=""><h1>desserts</h1></a>     
+      </div>   
+    </div>
+    <div class="total-amount">
+        Total Amount: <i class='bx bx-rupee'></i><span id="total">0</span>
+    </div>
+    <!-- <button onclick="total(8000)">Add to cart</button> -->
+    <div class="veg">
+        
+        <div class="veg1">
+            <img src="images/idly.jpg" alt="">
+            <h3>idly</h3>
+            <h6>Rs.45.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><button type="button" class="button2" onclick="total(45)">ORDER NOW</button></li>
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images-1/pbm.jpg" alt="">
+            <h3>panner masala</h3>
+            <h6>Rs.45.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(45)">ORDER NOW</button></li>
+
+            </ul> 
+        </div>
+        <div class="veg1">
+            <img src="images-1/mb.jpg" alt="">
+            <h3>mushroom biriyani</h3>
+            <h6>Rs.45.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><button type="button" class="button2" onclick="total(60)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images/chacha.jpg" alt="">
+            <h3>chappathi channa</h3>
+            <h6>Rs.45.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><button type="button" class="button2" onclick="total(45)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images-1/poori.jpg" alt="">
+            <h3>poori</h3>
+            <h6>Rs.60.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(60)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images-1/pongal.jpg" alt="">
+            <h3>pongal</h3>
+            <h6>Rs.50.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(50)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images/dosa.jpg" alt="">
+            <h3>dosa</h3>
+            <h6>Rs.45.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><button type="button" class="button2" onclick="total(45)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images-1/paniyaram.jpg" alt="">
+            <h3>paniyaram</h3>
+            <h6>Rs.45.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(45)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images-1/panner roll.jpg" alt="">
+            <h3>Panner Roll</h3>
+            <h6>Rs.75.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(75)">ORDER NOW</button></li>
+
+            </ul>
+        </div> 
+        <div class="veg1">
+            <img src="images-1/vegmeals.jpg" alt="">
+            <h3>Veg Meals</h3>
+            <h6>Rs.165.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(165)">ORDER NOW</button></li>
+
+            </ul>
+        </div> 
+        <div class="veg1">
+            <img src="images/curd.jpg" alt="">
+            <h3>Curd Rice</h3>
+            <h6>Rs.40.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(40)">ORDER NOW</button></li>
+
+            </ul>
+        </div> 
+        <div class="veg1">
+            <img src="images-1/uthappam.jpg" alt="">
+            <h3>Uthappam</h3>
+            <h6>Rs.55.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(55)">ORDER NOW</button></li>
+
+            </ul>
+        </div> 
+        <div class="veg1">
+            <img src="images-1/vegbiriyani.jpg" alt="">
+            <h3>Veg Biriyani</h3>
+            <h6>Rs.200.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(200)">ORDER NOW</button></li>
+
+            </ul>
+        </div> 
+        <div class="veg1">
+            <img src="images-1/pfr.jpg" alt="">
+            <h3>Panner Pice</h3>
+            <h6>Rs.150.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(150)">ORDER NOW</button></li>
+
+            </ul>
+        </div> 
+        <div class="veg1">
+            <img src="images-1/pt.jpg" alt="">
+            <h3>panner tikka</h3>
+            <h6>Rs.180.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star "></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(180)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images/appam.jpg" alt="">
+            <h3>Appam</h3>
+            <h6>Rs.180.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star "></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(130)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images/iddiyappam.jpg" alt="">
+            <h3>Idyappam</h3>
+            <h6>Rs.200.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star "></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(200)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images-1/masaldosa.jpg" alt="">
+            <h3>masaldosa</h3>
+            <h6>Rs.180.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star "></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(120)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+        <div class="veg1">
+            <img src="images-1/palpaniyaram.jpg" alt="">
+            <h3>Palpaniyaram</h3>
+            <h6>Rs.160.00</h6>
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star "></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><button type="button" class="button2" onclick="total(160)">ORDER NOW</button></li>
+
+            </ul>
+        </div>
+    </div>
+   <script>
+    var totalAmount = 0;
+
+function total(price) {
+    var ct = document.querySelector("#count").innerHTML;
+    ct = Number(ct);
+    ct++;
+    document.querySelector("#count").innerHTML = ct;
+
+    //-----------
+
+
+    var t=document.querySelector("#total").innerHTML;
+    t = Number(t);
+
+    t += price;
+    document.querySelector("#total").innerHTML = t;
+}
+    
+   </script>
+</body>
+</html>
